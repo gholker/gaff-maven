@@ -1,0 +1,17 @@
+language: android
+jdk: oraclejdk7
+
+android:
+  components:
+    - sys-img-x86-android-19
+  licenses:
+    - 'android-sdk-license-.+'
+
+before_script:
+  - ./script/emulator-start-wait.sh
+
+before_install:
+  - ./setup.sh
+
+script:
+  - mvn clean install
