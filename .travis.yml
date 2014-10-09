@@ -8,7 +8,7 @@ android:
     - 'android-sdk-license-.+'
 
 before_script:
-  - android update sdk --filter platform --no-ui
+  - echo "y" | android update sdk --filter platform --no-ui
   - ./script/emulator-start-wait.sh
 
 before_install:
