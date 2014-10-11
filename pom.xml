@@ -10,12 +10,11 @@
     <name>parent</name>
 
     <properties>
-        <java.version>1.7</java.version>
-        <android.version>4.3_r2</android.version>
-        <android.api.level>18</android.api.level>
-        <android.support.version>19.0.1</android.support.version>
+        <app.version>1.0-SNAPSHOT</app.version>
 
-        <junit.version>4.11</junit.version>
+        <java.version>1.7</java.version>
+        <android.version>4.4.2_r4</android.version>
+        <android.api.level>19</android.api.level>
         <spoon.version>1.1.1</spoon.version>
 
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -50,7 +49,7 @@
             <dependency>
                 <groupId>android</groupId>
                 <artifactId>android</artifactId>
-                <version>4.4.2_r3</version>
+                <version>${android.version}</version>
                 <scope>provided</scope>
                 <exclusions>
                     <exclusion>
@@ -67,7 +66,7 @@
             <dependency>
                 <groupId>junit</groupId>
                 <artifactId>junit</artifactId>
-                <version>${junit.version}</version>
+                <version>4.11</version>
                 <scope>test</scope>
             </dependency>
 
@@ -76,6 +75,12 @@
                 <artifactId>robolectric</artifactId>
                 <version>2.4-SNAPSHOT</version>
                 <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>com.google.android</groupId>
+                <artifactId>espresso</artifactId>
+                <version>1.1</version>
             </dependency>
 
             <dependency>

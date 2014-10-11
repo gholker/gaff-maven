@@ -11,7 +11,7 @@
     </parent>
 
     <artifactId>gaff</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>${app.version}</version>
     <packaging>apk</packaging>
     <name>gaff</name>
     <description>Example Maven project with Robolectric and Espresso side by side</description>
