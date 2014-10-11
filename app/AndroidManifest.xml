@@ -5,15 +5,14 @@
           package="com.example">
 
     <uses-sdk
-        android:minSdkVersion="15"
-        android:targetSdkVersion="18"/>
+        android:minSdkVersion="14"
+        android:targetSdkVersion="19"/>
 
     <application>
 
         <activity
-            android:name="MainActivity"
-            android:screenOrientation="unspecified">
-            <intent-filter>
+            android:name="MainActivity">
+        <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
